@@ -195,6 +195,7 @@ export default {
 			border-radius: 0;
 			font-weight: normal;
 			font-size: 0.875em;
+			padding-left: 40px;
 
 			&:hover,
 			&:focus {
