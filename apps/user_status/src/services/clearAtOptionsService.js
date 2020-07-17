@@ -28,22 +28,22 @@ import { translate as t } from '@nextcloud/l10n'
  */
 const getAllClearAtOptions = () => {
 	return [{
-		label: t('user_status', 'Never'),
+		label: t('user_status', 'Don\'t clear'),
 		clearAt: null,
 	}, {
-		label: t('user_status', 'in 30 minutes'),
+		label: t('user_status', '30 minutes'),
 		clearAt: {
 			'type': 'period',
 			'time': 1800,
 		},
 	}, {
-		label: t('user_status', 'in 1 hour'),
+		label: t('user_status', '1 hour'),
 		clearAt: {
 			'type': 'period',
 			'time': 3600,
 		},
 	}, {
-		label: t('user_status', 'in 4 hours'),
+		label: t('user_status', '4 hours'),
 		clearAt: {
 			'type': 'period',
 			'time': 14400,
