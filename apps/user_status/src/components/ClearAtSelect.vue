@@ -78,7 +78,7 @@ export default {
 				return
 			}
 
-			this.$emit('selectClearAt', option)
+			this.$emit('selectClearAt', option.clearAt)
 		},
 	},
 }
