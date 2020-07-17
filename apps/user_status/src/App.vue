@@ -97,7 +97,7 @@ export default {
 		 * @returns {String}
 		 */
 		visibleMessage() {
-			return this.customMessage || this.$t('user_status', 'Set a status')
+			return this.customMessage || this.$t('user_status', 'Set status')
 		},
 		/**
 		 * The status indicator icon
