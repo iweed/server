@@ -29,10 +29,12 @@
 				<h3>{{ $t('user_status', 'Set a custom status') }}</h3>
 			</div>
 			<div class="set-status-modal__custom-input">
-				<button
-					class="custom-input__emoji-button">
-					{{ visibleIcon }}
-				</button>
+				<EmojiPicker @select="setIcon">
+					<button
+						class="custom-input__emoji-button">
+						{{ visibleIcon }}
+					</button>
+				</EmojiPicker>
 				<input
 					class="custom-input__message"
 					:placeholder="$t('user_status', 'What\'s your status?')"
@@ -57,6 +59,7 @@
 </template>
 
 <script>
+import EmojiPicker from '@nextcloud/vue/dist/Components/EmojiPicker'
 import Modal from '@nextcloud/vue/dist/Components/Modal'
 import PredefinedStatusesList from './PredefinedStatusesList'
 import ClearAtSelect from './ClearAtSelect'
@@ -65,6 +68,7 @@ import { showError } from '@nextcloud/dialogs'
 export default {
 	name: 'SetStatusModal',
 	components: {
+		EmojiPicker,
 		Modal,
 		PredefinedStatusesList,
 		ClearAtSelect,
